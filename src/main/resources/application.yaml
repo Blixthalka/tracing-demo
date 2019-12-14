@@ -1,0 +1,8 @@
+spring:
+  sleuth:
+    log:
+      slf4j:
+        whitelisted-mdc-keys:
+        - "cool-baggage-key"
+    propagation-keys:
+    - "cool-baggage-key"

@@ -1,0 +1,11 @@
+<configuration>
+  <appender class="ch.qos.logback.core.ConsoleAppender" name="logAppender">
+    <encoder>
+      <charset>UTF-8</charset>
+      <pattern>%d{"yyyy-MM-dd'T'HH:mm:ss,SSS"} [%-5level] [%X{X-B3-TraceId:-}] [%X{X-B3-SpanId:-}] [%X{cool-baggage-key:-}] - %msg%n</pattern>
+    </encoder>
+  </appender>
+  <root level="INFO">
+    <appender-ref ref="logAppender"/>
+  </root>
+</configuration>
