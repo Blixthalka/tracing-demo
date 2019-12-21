@@ -46,7 +46,6 @@ public class DemoController {
         "1", "John Doe",
         "2", "Jane Doe"
     );
-
     return Mono.justOrEmpty(Optional.ofNullable(db.get(id)));
   }
 }
